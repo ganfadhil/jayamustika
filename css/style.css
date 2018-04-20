@@ -1,13 +1,11 @@
 body{
   background-color: #f0f0f0;
 }
-.meida {
-  padding: 10px 10px 10px 10px;
+.card-resume {
   background-color: #ffffff;
-  -webkit-box-shadow: 3px 3px 23px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 3px 23px -7px rgba(0,0,0,0.75);
-  box-shadow: 3px 3px 23px -7px rgba(0,0,0,0.75);
+  border-radius: 4px;
+  padding: 25px 15px;
 }
-.meida-icon {
-  font-size: 30px;
+.fa-resume {
+  font-size: 36px;
 }
