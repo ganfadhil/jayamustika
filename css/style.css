@@ -4,7 +4,14 @@ body{
 .breadcrumb {
   margin-bottom: 35px;
 }
-
+.hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cbcbcb;
+    margin: 30px 0;
+    padding: 0;
+}
 /* dashboard */
 .card-resume {
   background-color: #ffffff;
@@ -52,3 +59,6 @@ body{
 }
 
 /* account */
+.account-section-title{
+  font-size: 20px;
+}

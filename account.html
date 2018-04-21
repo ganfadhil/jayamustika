@@ -96,39 +96,128 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h3>Personal</h3>
+          <p class="account-section-title">Personal</p>
+        </div>
+      </div>
+      <!-- personal -->
+      <div class="row">
+        <form action="">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Full name" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Full name" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="email" class="form-control" id="phone" placeholder="Phone" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="jabatan">Jabatan</label>
+              <input type="text" class="form-control" id="jabatan" placeholder="Jabatan" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </div>
+      <div class="hr"></div>
+      <!-- Change Password -->
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="account-section-title">Change Password</p>
         </div>
       </div>
       <div class="row">
         <form action="">
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="fullName">Full Name</label>
-              <input type="text" class="form-control" id="fullName" placeholder="Full name"/>
+              <label for="oldPassword">Old Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required="required"/>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="form-group">
-              <label for="emailAddress">Email Address</label>
-              <input type="email" class="form-control" id="emailAddress" placeholder="Full name"/>
+              <label for="newPassword">New Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required="required"/>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="email" class="form-control" id="phone" placeholder="Phone"/>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <label for="jabatan">Jabatan</label>
-              <input type="text" class="form-control" id="jabatan" placeholder="Jabatan"/>
+              <label for="confirmPassword">Confirm New Password</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required="required"/>
             </div>
           </div>
           <div class="col-lg-12">
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
-
+        </form>
+      </div>
+      <div class="hr"></div>
+      <!-- Company -->
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="account-section-title">Company</p>
+        </div>
+      </div>
+      <div class="row">
+        <form action="">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="companyName">Company Name</label>
+              <input type="text" class="form-control" id="companyName" placeholder="Company Name" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="companyAddress">Address</label>
+              <input type="text" class="form-control" id="companyAddress" placeholder="Company Address" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="companyEmail">Company Email</label>
+              <input type="email" class="form-control" id="companyEmail" placeholder="Company Email" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="bankAccount">Bank Account</label>
+              <input type="text" class="form-control" id="bankAccount" placeholder="ex : BCA" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="bankAccountNumber">Rekening Number</label>
+              <input type="number" class="form-control" id="bankAccountNumber" placeholder="Rekening Number" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="companyPhone">Phone / Fax</label>
+              <input type="phone" class="form-control" id="companyPhone" placeholder="Phone / Fax" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="form-group">
+              <label for="companyLogo">Company Logo</label>
+              <input type="file" id="companyLogo" required="required">
+              <p class="help-block">Max file size is 5MB. Only JPG & PNG are allowed</p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
         </form>
       </div>
     </div>
