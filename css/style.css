@@ -12,6 +12,12 @@ body{
     margin: 30px 0;
     padding: 0;
 }
+.no-padding{
+  padding: 0px;
+}
+.no-margin{
+  margin: 0px;
+}
 /* dashboard */
 .card-resume {
   background-color: #ffffff;
@@ -65,9 +71,10 @@ body{
 /* financial in progress */
 .table-in-progress{
   width: 100%;
-  max-height: 700px;
+  max-height: 400px;
   overflow-y: scroll;
   display: inline-block;
+  margin-top: 25px;
   margin-bottom: 35px;
 }
 .text-spal {
