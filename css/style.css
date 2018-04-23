@@ -62,3 +62,14 @@ body{
 .account-section-title{
   font-size: 20px;
 }
+/* financial in progress */
+.table-in-progress{
+  width: 100%;
+  max-height: 700px;
+  overflow-y: scroll;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+.text-spal {
+  margin-right: 10px;
+}
