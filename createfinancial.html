@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Create Financial</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jaya Mustika Sela</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
+            <!-- <li><a href="#">Link</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Financial <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a href="createfinancial.html">Create</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Draft</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Real Cost <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Draft</a></li>
+              </ul>
+            </li>
+            <li><a href="#">History</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">SPAL</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form> -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- breadcrumb -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ol class="breadcrumb">
+            <li><a href="#">Dashboard</a></li>
+            <li class="active">Create Financial</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <form action="">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" class="form-control" id="date" placeholder="Date" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="customer">Customer</label>
+              <input type="text" class="form-control" id="customer" placeholder="Customer" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="jenisBarang">Jenis Barang</label>
+              <select class="form-control">
+                <option>Batu Bara</option>
+                <option>Nikel</option>
+                <option>Beton</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="madeBy">Made By</label>
+              <input type="text" class="form-control" id="madeBy" placeholder="Made By" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="jenisBarang">Project</label>
+              <select class="form-control">
+                <option value="">Pilih kapal</option>
+                <option value="">Syukur 11</option>
+                <option value="">syukur 12</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="volumeBarang">Volume Barang</label>
+              <input type="number" class="form-control" id="volumeBarang" placeholder="Volume Barang" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="bankerVolume">Banker Volume</label>
+              <input type="number" class="form-control" id="bankerVolume" placeholder="Banker Volume" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="reservedVolume">Reserved Volume</label>
+              <input type="number" class="form-control" id="reservedVolume" placeholder="Reserved Volume" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="rateBarang">Rate Barang</label>
+              <input type="number" class="form-control" id="rateBarang" placeholder="Reserved Volume" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="bunkerRate">Bunker Rate</label>
+              <input type="number" class="form-control" id="bunkerRate" placeholder="Reserved Volume" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="reservedRate">Reserved Rate</label>
+              <input type="number" class="form-control" id="reservedRate" placeholder="Reserved Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="loadingTime">Loading Time</label>
+              <input type="number" class="form-control" id="loadingTime" placeholder="Loading Time" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="agentRate">Agent Rate</label>
+              <input type="number" class="form-control" id="agentRate" placeholder="Agent Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="cleaningRate">Cleaning Rate</label>
+              <input type="number" class="form-control" id="cleaningRate" placeholder="Cleaning Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="dischargingTime">Discharging Time</label>
+              <input type="number" class="form-control" id="dischargingTime" placeholder="Discharging Time" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="freshWaterVolume">Fresh Water Volume</label>
+              <input type="number" class="form-control" id="freshWaterVolume" placeholder="Fresh water volume" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="navigationRate">Navigation Rate</label>
+              <input type="number" class="form-control" id="navigationRate" placeholder="Navigation Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="sailingTime">Sailing Time</label>
+              <input type="number" class="form-control" id="sailingTime" placeholder="Sailing Time" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="freshWaterRate">Fresh Water Rate</label>
+              <input type="number" class="form-control" id="freshWaterRate" placeholder="Sailing Time" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="terpalRate">Terpal Rate</label>
+              <input type="number" class="form-control" id="terpalRate" placeholder="Terpal Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="pol">Port of Loading</label>
+              <input type="text" class="form-control" id="pol" placeholder="Port of Loading" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="premiCrewRate">Premi Crew Rate</label>
+              <input type="number" class="form-control" id="premiCrewRate" placeholder="Premi Crew Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="assist">Assist</label>
+              <input type="text" class="form-control" id="assist" placeholder="Assist" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="pod">Port of Discharging</label>
+              <input type="text" class="form-control" id="pod" placeholder="Port of Discharging" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="timeChartedRate">Time Charted Rate</label>
+              <input type="number" class="form-control" id="timeChartedRate" placeholder="Time Charted Rate" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label for="addCost">Add Cost</label>
+              <input type="number" class="form-control" id="addCost" placeholder="Add Cost" required="required"/>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="submit" class="btn btn-default">Save as Draft</button>
+              <button type="submit" class="btn btn-primary">Proses</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
