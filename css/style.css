@@ -81,3 +81,7 @@ body{
 .text-spal {
   margin-right: 10px;
 }
+/* invoice */
+.spalInvoiceText{
+  margin-top: -20px;
+}
