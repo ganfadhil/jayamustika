@@ -139,7 +139,7 @@
                 <tbody>
                   <tr id="addr0">
                     <td>
-                      <textarea name="invoiceDescription" class="form-control" rows="4" cols="80" placeholder="Description"></textarea>
+                      <textarea name="invoiceDescription" class="form-control" rows="4" cols="30" placeholder="Description"></textarea>
                     </td>
                     <td>
                       <div class="form-group">
@@ -162,7 +162,7 @@
                 <tfoot>
                   <tr>
                     <td colspan="3">
-                      <div class="btn-group" role="group" aria-label="...">
+                      <div class="btn-group pull-right" role="group" aria-label="...">
                         <input type="button" class="btn btn-primary" id="addrow" value="Add Row" />
                         <input type="button" class="btn btn-danger" id="delete_row" value="Delete Row" />
                       </div>
@@ -254,9 +254,9 @@
                   <div class="btn-group" role="group" aria-label="...">
                     <a href="financialdraft.html" class="btn btn-warning">SPAL</a>
                     <a href="invoice.html" class="btn btn-primary">Preview</a>
-                    <a href="invoice.html" class="btn btn-default">Save as Draft</a>
+                    <a href="financialdraft.html" class="btn btn-default">Save as Draft</a>
                     <a href="invoice.html" class="btn btn-success">Save as PDF</a>
-                    <a href="invoice.html" class="btn btn-primary">Mail to</a>
+                    <a href="" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Mail to</a>
                     <!-- <button type="submit" class="btn btn-default">Save as Draft</button>
                     <button type="submit" class="btn btn-primary">Proses</button> -->
                   </div>
@@ -267,6 +267,36 @@
         </form>
       </div>
     </div>
+
+    <!-- Bootstrap modal untuk hapus draft -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Send this Invoice via Email</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="">Email address</label>
+              <input type="email" class="form-control" name="" value=""/>
+            </div>
+            <div class="form-group">
+              <label for="">Subject</label>
+              <input type="text" class="form-control" name="" value=""/>
+            </div>
+            <div class="form-group">
+              <label for="">Messages</label>
+              <textarea name="name" class="form-control" rows="4" cols="30"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -279,7 +309,7 @@
           $("#addrow").on('click',function(){
             var cols = "";
 
-            cols += '<td><textarea name="invoiceDescription" class="form-control" rows="4" cols="80" placeholder="Description"></textarea></td>';
+            cols += '<td><textarea name="invoiceDescription" class="form-control" rows="4" cols="30" placeholder="Description"></textarea></td>';
             cols += '<td><div class="form-group"><select class="form-control"><option value="">IDR</option><option value="">USD</option></select></div></td>';
             cols+= '<td><div class="form-group"><input type="text" class="form-control" name="nominal" value=""/></div></td>';
 
